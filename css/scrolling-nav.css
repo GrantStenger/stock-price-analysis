@@ -25,7 +25,6 @@ section {
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
-  color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -69,12 +68,5 @@ section {
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
-  }
-}
-
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
   }
 }
