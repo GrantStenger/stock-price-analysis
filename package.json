@@ -1,8 +1,8 @@
 {
-    "title": "Portfolio Item",
-    "name": "startbootstrap-portfolio-item",
+    "title": "Scrolling Nav",
+    "name": "startbootstrap-scrolling-nav",
     "version": "4.0.0",
-    "description": "A portfolio item HTML template built with Bootstrap",
+    "description": "A smooth scrolling navigation HTML template built with Bootstrap",
     "keywords": [
         "css",
         "sass",
@@ -11,9 +11,9 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/portfolio-item",
+    "homepage": "https://startbootstrap.com/template-overviews/scrolling-nav",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-portfolio-item/issues",
+        "url": "https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/issues",
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
@@ -23,11 +23,12 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-portfolio-item.git"
+        "url": "https://github.com/BlackrockDigital/startbootstrap-scrolling-nav.git"
     },
     "dependencies": {
         "bootstrap": "4.0.0",
-        "jquery": "3.3.1"
+        "jquery": "3.3.1",
+        "jquery.easing": "^1.4.1"
     },
     "devDependencies": {
         "browser-sync": "2.23.6",

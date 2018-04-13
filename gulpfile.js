@@ -20,6 +20,12 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor/jquery'))
 
+  // jQuery Easing
+  gulp.src([
+      'node_modules/jquery.easing/*.js'
+    ])
+    .pipe(gulp.dest('vendor/jquery-easing'))
+
 })
 
 // Default task
@@ -37,5 +43,6 @@ gulp.task('browserSync', function() {
 // Dev task
 gulp.task('dev', ['browserSync'], function() {
   gulp.watch('./css/*.css', browserSync.reload);
+  gulp.watch('./js/*.js', browserSync.reload);
   gulp.watch('./*.html', browserSync.reload);
 });
