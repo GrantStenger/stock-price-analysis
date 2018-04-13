@@ -14,7 +14,10 @@
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
   </head>
 
@@ -88,8 +91,20 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Section One</h2>
+            <h2>Section One:</h2>
+            <h4>Plotting Time Series Data with Plotly and Quandl's API</h4>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <form class="form-inline">
+              <div class="form-group">
+                <input type="text" class="form-control" id="stockInput" placeholder="Enter a stock">
+              </div>
+              <button id="submit" type="submit" class="btn btn-default">Plot Stock</button>
+            </form>
+            <div id="plot"></div>
           </div>
         </div>
       </div>
@@ -145,6 +160,9 @@
 
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
+
+    <!-- Plotting Time Series Data -->
+    <script src="js/plots.js"></script>
 
   </body>
 
