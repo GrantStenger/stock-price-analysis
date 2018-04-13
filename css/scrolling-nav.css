@@ -25,6 +25,7 @@ section {
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
+  color: #fff;
 }
 
 @media (min-width: 992px) {
