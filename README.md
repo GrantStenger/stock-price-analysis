@@ -10,17 +10,17 @@
 
 3. You must use:
 
-⋅⋅* Sci-Kit Learn and/or another machine learning library
+    * Sci-Kit Learn and/or another machine learning library
 
 4. You must use at least two of the below
 
-⋅⋅* Python Pandas
+    * Python Pandas
 
-⋅⋅* Python Matplotlib
+    * Python Matplotlib
 
-⋅⋅* Python Tweepy
+    * Python Tweepy
 
-⋅⋅* Python Flask
+    * Python Flask
 
 ⋅⋅* HTML/CSS/Bootstrap
 
