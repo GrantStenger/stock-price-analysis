@@ -30,7 +30,7 @@
 
 6. Example Projects:
     * Create a Front-End Interface that Maps to an API to “Smarten” the Algorithm
-    * Perform a Deep Dive of Existing Data Using Machine Learning 
+    * Perform a Deep Dive of Existing Data Using Machine Learning
     * Create a Visualization that Continues to “Learn” Where Clusters Lie Based on ML (Use D3 or Plotly to Change the Visualization)
     * Create an idea with “mock data” that simulates how machine learning might be used
     * Create an analysis of existing data to make a prediction, classification, or regression
@@ -40,5 +40,23 @@
 
 ### Data sets to use:
 - Quandl
-- YahooFinance
-- GoogleFinance
+- Yahoo Finance
+- Google Finance
+
+### Languages and Tools Used:
+- HTML
+- CSS
+- JavaScript
+    - jQuery
+    - Plotly.js
+- Bootstrap
+
+### Hypotheses to Test
+- Test conventional wisdom
+    - Is the saying "sell in May and go away" meaningful advice?
+    - Test "buy the close, sell the open"
+- Try some ML
+    - LSTMs on time series data
+    - NLP Twitter Sentiment
+    - WaveNet
+    - Neural Network, SVM, Random Forests, Logistic Regression
