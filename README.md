@@ -10,49 +10,49 @@
 
 3. You must use:
 
-..* Sci-Kit Learn and/or another machine learning library
+⋅⋅* Sci-Kit Learn and/or another machine learning library
 
 4. You must use at least two of the below
 
-..* Python Pandas
+⋅⋅* Python Pandas
 
-..* Python Matplotlib
+⋅⋅* Python Matplotlib
 
-..* Python Tweepy
+⋅⋅* Python Tweepy
 
-..* Python Flask
+⋅⋅* Python Flask
 
-..* HTML/CSS/Bootstrap
+⋅⋅* HTML/CSS/Bootstrap
 
-..* JavaScript Plotly
+⋅⋅* JavaScript Plotly
 
-..* Javascript D3.js
+⋅⋅* Javascript D3.js
 
-..* JavaScript Leaflet
+⋅⋅* JavaScript Leaflet
 
-..* MySQL Database
+⋅⋅* MySQL Database
 
-..* MongoDB Database
+⋅⋅* MongoDB Database
 
-..* Google Cloud SQL
+⋅⋅* Google Cloud SQL
 
-..* Amazon AWS
+⋅⋅* Amazon AWS
 
-..* Tableau
+⋅⋅* Tableau
 
 5. Prepare a 15 minute “data deep dive” or “infrastructure walkthrough” that shows machine learning the context of what we’ve already learned.
 
 6. Example Projects:
 
-..* Create a Front-End Interface that Maps to an API to “Smarten” the Algorithm
+⋅⋅* Create a Front-End Interface that Maps to an API to “Smarten” the Algorithm
 
-..* Perform a Deep Dive of Existing Data Using Machine Learning 
+⋅⋅* Perform a Deep Dive of Existing Data Using Machine Learning 
 
-..* Create a Visualization that Continues to “Learn” Where Clusters Lie Based on ML (Use D3 or Plotly to Change the Visualization)
+⋅⋅* Create a Visualization that Continues to “Learn” Where Clusters Lie Based on ML (Use D3 or Plotly to Change the Visualization)
 
-..* Create an idea with “mock data” that simulates how machine learning might be used
+⋅⋅* Create an idea with “mock data” that simulates how machine learning might be used
 
-..* Create an analysis of existing data to make a prediction, classification, or regression
+⋅⋅* Create an analysis of existing data to make a prediction, classification, or regression
 
 
 ## Notes
