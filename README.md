@@ -38,10 +38,29 @@
 
 ## Notes
 
-### Data sets to use:
-- Quandl
-- Yahoo Finance
-- Google Finance
+### Historical Data:
+- Providers
+    - Quandl
+    - Yahoo Finance
+    - Google Finance
+- Types of Data
+    - Fundamental Data
+        - interest rates
+        - inflation figures
+        - corporate actions (dividends, stock-splits)
+        - SEC filings
+        - earnings figures
+        - crop reports
+        - meteorological data
+    - News Data (sentiment analysis, NoSQL)
+        - tweets
+        - blogs
+        - articles
+    - Time Series Price Data
+        - equities
+        - bonds
+        - commodities
+        - forex
 
 ### Languages and Tools Used (So Far):
 - HTML
@@ -50,6 +69,13 @@
     - jQuery
     - Plotly.js
 - Bootstrap
+
+### Languages and Tools to Use:
+- Tensorflow.js
+- Flask
+- Quandl API
+- Yahoo Finance API
+- MySQL
 
 ### Hypotheses to Test:
 - Test conventional wisdom
@@ -60,7 +86,7 @@
     - Time Series Data
         - LSTMs on time series data (RNN)
         - WaveNet
-    - Neural Network, Random Forests, SVM, Logistic Regression
+    - Neural Network, Random Forests, SVM, Logistic Regression, Naive Bayes
         - NLP Twitter Sentiment
         - Market Cap
         - P/E Ratio
@@ -79,6 +105,15 @@
         - Return on Equity
         - Volatility
 
+### Trading Strategy Evaluation
+- Methodology (momentum based, mean-reverting, market-neutral, directional, etc.)
+- Sharpe Ratio (essentially reward/risk ratio)
+- Maximum Drawdown
+- Frequency (higher = more statistically significant, harder to implement, need higher quality data, transaction costs more important)
+- Win/Los, Average Profit/Loss
+- Number of parameters (overfitting)
+- Benchmark (for large-cap US equities the S&P500 would be a natural comparison)
+- Return and Leverage
 
 ### Important Factors to Keep in Mind:
 - How consistent are the returns?
