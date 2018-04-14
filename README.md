@@ -99,15 +99,15 @@
 - Follow proper hypothesis testing procedure.
 
 ### Resources Referenced:
-- *Financial Time Series Prediction using Deep Learning*, https://arxiv.org/pdf/1711.04174.pdf
-- *Deep Learning for Forecasting Stock Returns in the Cross-Section*, https://arxiv.org/pdf/1801.03018.pdf
-- *Predict Forex Trend via Convolutional Neural Networks*, https://arxiv.org/pdf/1801.01777.pdf
-- *Deep Learning Stock Volatility with Google Domestic Trends* https://arxiv.org/pdf/1512.04916.pdf
+- "Financial Time Series Prediction using Deep Learning", https://arxiv.org/pdf/1711.04174.pdf
+- "Deep Learning for Forecasting Stock Returns in the Cross-Section", https://arxiv.org/pdf/1801.03018.pdf
+- "Predict Forex Trend via Convolutional Neural Networks", https://arxiv.org/pdf/1801.01777.pdf
+- "Deep Learning Stock Volatility with Google Domestic Trends" https://arxiv.org/pdf/1512.04916.pdf
 - *Algorithmic Trading: Winning Strategies and Their Rationale*, Ernest P. Chan
 - *Quantitative Trading: How to Build Your Own Algorithmic Trading Business*, Ernest P. Chan
-- *Seasonal Effects in Equity Markets*, Quantitative Research and Trading,  http://jonathankinlay.com/2016/05/seasonality-equity-markets/
-- *The Optimism Cycle: Sell in May*, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=643583
-- *'Sell in May and Go Away' Just Won't Go Away*, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2115197
-- *Turn of the Month in Equity Indexes*, https://quantpedia.com/screener/Details/41
-- *Equity Returns at the Turn of the Month*, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=917884
-- *Equity forecast: Predicting long term stock price movement using machine learning*, https://arxiv.org/pdf/1603.00751.pdf
+- "Seasonal Effects in Equity Markets", Quantitative Research and Trading,  http://jonathankinlay.com/2016/05/seasonality-equity-markets/
+- "The Optimism Cycle: Sell in May", https://papers.ssrn.com/sol3/papers.cfm?abstract_id=643583
+- "'Sell in May and Go Away' Just Won't Go Away", https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2115197
+- "Turn of the Month in Equity Indexes", https://quantpedia.com/screener/Details/41
+- "Equity Returns at the Turn of the Month", https://papers.ssrn.com/sol3/papers.cfm?abstract_id=917884
+- "Equity forecast: Predicting long term stock price movement using machine learning", https://arxiv.org/pdf/1603.00751.pdf
