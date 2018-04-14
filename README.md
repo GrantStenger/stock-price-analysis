@@ -83,33 +83,40 @@
     - Test "buy the close, sell the open"
     - Test Momentum vs Mean Reversion strategies
 - Try some ML
-    - Time Series Data
+    - Univariate Analysis on Time Series Data
         - LSTMs on time series data (RNN)
         - WaveNet
-    - Neural Network, Random Forests, SVM, Logistic Regression, Naive Bayes
-        - NLP Twitter Sentiment
-        - Market Cap
-        - P/E Ratio
-        - Beta
-        - Earnings per Share
-        - Enterprise Value Multiple
-        - P/E to growth ratio
-        - Price/book ratio
-        - Enterprise Value/Revenue
-        - Price/cash flow ratio
-        - Price/Sales Ratio
-        - Dividend Yield
-        - Profit Margin
-        - Operating Margin
-        - Return on Assets
-        - Return on Equity
-        - Volatility
+    - Multivariate Analysis
+        - Techniques
+            - Neural Network
+            - Random Forests
+            - SVM
+            - Logistic Regression
+            - Naive Bayes
+        - Possible Features
+            - NLP Twitter Sentiment
+            - Market Cap
+            - P/E Ratio
+            - Beta
+            - Earnings per Share
+            - Enterprise Value Multiple
+            - P/E to growth ratio
+            - Price/book ratio
+            - Enterprise Value/Revenue
+            - Price/cash flow ratio
+            - Price/Sales Ratio
+            - Dividend Yield
+            - Profit Margin
+            - Operating Margin
+            - Return on Assets
+            - Return on Equity
+            - Volatility
 
 ### Trading Strategy Evaluation
-- Sharpe Ratio (essentially reward/risk ratio)
+- What is the Sharpe Ratio? (Essentially reward/risk ratio.)
 - How deep and long are the drawdowns?
-- What was the Win/Loss ratio and what was the average Profit and Loss
-- How does this strategy compare to our benchmark? (for large-cap US equities the S&P500 would be a natural comparison)
+- What was the win/loss ratio and what was the average profit and loss?
+- How does this strategy compare to our benchmark? For large-cap US equities the S&P500 would be a natural comparison.
 - How consistent are the returns?
 - How did the performance of the strategy change over the years? Do returns start to diminish over time?
 - Does the model overfit? Look at number of parameters. Do sensitivity analysis and dimensionality reduction.
