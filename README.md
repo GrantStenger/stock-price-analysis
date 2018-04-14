@@ -43,7 +43,7 @@
 - Yahoo Finance
 - Google Finance
 
-### Languages and Tools Used:
+### Languages and Tools Used (So Far):
 - HTML
 - CSS
 - JavaScript
@@ -51,12 +51,32 @@
     - Plotly.js
 - Bootstrap
 
-### Hypotheses to Test
+### Hypotheses to Test:
 - Test conventional wisdom
     - Is the saying "sell in May and go away" meaningful advice?
     - Test "buy the close, sell the open"
+    - Test Momentum vs Mean Reversion strategies
 - Try some ML
     - LSTMs on time series data
     - NLP Twitter Sentiment
     - WaveNet
     - Neural Network, SVM, Random Forests, Logistic Regression
+
+### Important Factors to Keep in Mind:
+- How consistent are the returns?
+- How deep and long is the drawdown?
+- How will transaction costs affect the strategy (commission, slippage, market impact)?
+- Does the data suffer from survivorship bias?
+    - Yahoo Finance does have survivorship bias.
+    - *"Buy low price stocks" strategy highly susceptible to survivorship.*
+- How did the performance of the strategy change over the years?
+- Does the strategy suffer from data-snooping bias?
+- Maximum long-term growth is achieved by finding a strategy with the maximum Sharpe ratio, provided that you have access to sufficiently high leverage.
+- High and low data is potentially susceptible to look-ahead bias and is commonly unreliable.
+- Sharpe ratio and drawdowns are probably the most important ways to evaluate a strategy.
+- Beware overfitting.
+- Number of data points should always be greater than about 250 times the number of parameters
+- Use old data as training set and newer data as test set
+- Running the model on actual unseen data is the most reliable way to test it
+- Fewer parameters is better. Dimensionality reduction, sensitivity analysis 
+- No backtest is realistic without incorporating transaction costs
