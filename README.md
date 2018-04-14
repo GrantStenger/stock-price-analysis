@@ -38,30 +38,6 @@
 
 ## Notes
 
-### Historical Data:
-- Providers
-    - Quandl
-    - Yahoo Finance
-    - Google Finance
-- Types of Data
-    - Fundamental Data
-        - interest rates
-        - inflation figures
-        - corporate actions (dividends, stock-splits)
-        - SEC filings
-        - earnings figures
-        - crop reports
-        - meteorological data
-    - News Data (sentiment analysis, NoSQL)
-        - tweets
-        - blogs
-        - articles
-    - Time Series Price Data
-        - equities
-        - bonds
-        - commodities
-        - forex
-
 ### Languages and Tools
 - Used So Far:
     - HTML
@@ -77,7 +53,33 @@
     - Yahoo Finance API
     - MySQL
 
-### Hypotheses to Test:
+### Possible Data Options
+- Providers
+    - Quandl
+    - Yahoo Finance
+    - Alpha Vantage
+    - EOD Historical Data
+    - Intrinio
+- Types of Data
+  - Time Series Price Data
+      - Equities
+      - Bonds
+      - Commodities
+      - Forex
+    - Fundamental and Macroeconomic Data
+        - Interest rates
+        - Inflation figures
+        - Corporate actions (dividends, stock-splits)
+        - SEC filings
+        - Earnings figures
+        - Crop reports
+        - Meteorological data
+    - News Data (sentiment analysis, NoSQL)
+        - Tweets
+        - Blogs
+        - Articles
+
+### Hypotheses to Test
 - Test conventional wisdom
     - Is the saying "sell in May and go away" meaningful advice?
     - Test "buy the close, sell the open"
@@ -129,7 +131,7 @@
 - Did we follow proper hypothesis testing procedure?
 - Running the model on actual unseen data is the most reliable way to test it.
 
-### Resources Referenced:
+### Resources Referenced
 - "Financial Time Series Prediction using Deep Learning", https://arxiv.org/pdf/1711.04174.pdf
 - "Deep Learning for Forecasting Stock Returns in the Cross-Section", https://arxiv.org/pdf/1801.03018.pdf
 - "Predict Forex Trend via Convolutional Neural Networks", https://arxiv.org/pdf/1801.01777.pdf
