@@ -40,8 +40,11 @@
   - Run: `pip install -r requirements.txt`
 - Create a file called passwords.py
   - Set the variables
-    - `PASSWORD = "{your_password_here}"`
-    - `API_KEY = "{your_api_key_here}"`
+    ```
+    # insert_symbols.py
+    PASSWORD = "{your_password_here}"
+    API_KEY = "{your_api_key_here}"
+    ```
   - from passwords.py import PASSWORD, API_KEY (whenever these variables are needed)
 - Configuring MySQL
   - In MySQL Workbench create a new database and user.
