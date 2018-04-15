@@ -1,4 +1,4 @@
-# Data Analytics Bootcamp Final Project: Stock Price Analysis
+# Stock Price Analysis
 
 ## Prompt
 
