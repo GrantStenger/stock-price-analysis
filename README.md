@@ -37,9 +37,7 @@
 
 ## Installation and Set-Up
     - Install dependencies
-      ```
-      pip install -r requirements.txt
-      ```
+      Run: pip install -r requirements.txt
     - Create a file called passwords.py
       - Set the variables
         - PASSWORD = "{your_password_here}"
