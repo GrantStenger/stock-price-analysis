@@ -42,13 +42,13 @@
   - In MySQL Workbench create a new database and user
   - Run financial_db.sql script to create the tables
   - Create a file called passwords.py
-    - Set the variables:
+    - This is the code:
       ```python
       # insert_symbols.py
       PASSWORD = "{your_password_here}"
       API_KEY = "{your_api_key_here}"
       ```
-    - Import passwords with `from passwords.py import PASSWORD, API_KEY` whenever these variables are needed.
+    - Import these variables with `from passwords.py import PASSWORD, API_KEY` whenever necessary.
   - Run insert_symbols.py to populate the symbol table
     - This parses Wikipedia's S&P500 page using requests and BeautifulSoup
     - Then the ticker symbols are inserted into the MySQL database
