@@ -1,3 +1,5 @@
+matplotlib==2.1.1
+pandas==0.20.1
 requests==2.18.4
 Quandl==3.3.0
 beautifulsoup4==4.6.0
