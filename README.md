@@ -40,7 +40,7 @@
   - Run: `pip install -r requirements.txt`
 - Create a file called passwords.py
   - Set the variables
-    ```
+    ```python
     # insert_symbols.py
     PASSWORD = "{your_password_here}"
     API_KEY = "{your_api_key_here}"
