@@ -50,6 +50,8 @@
     - Adds relevant data to the database (~20,000,000 data points)
   - Run sql_to_dataframe.py to grab relevant data from MySQL and return a pandas DataFrame
     - Data analysis MUCH easier with pandas
+- Analysis will build off of pandas DataFrames
+- Website currently hosted at [gstenger98.github.io/stock-price-analysis](https://gstenger98.github.io/stock-price-analysis/), but Heroku and Flask will soon be used.
 
 ## Unofficial Notes
 
