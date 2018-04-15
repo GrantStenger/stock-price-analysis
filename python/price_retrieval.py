@@ -2,18 +2,18 @@ import datetime
 import warnings
 import MySQLdb as mdb
 import requests
-import json
-from passwords import PASSWORD, API_KEY
 import quandl
+from passwords import PASSWORD, API_KEY
+
 
 # Authenticate Session
 quandl.ApiConfig.api_key = API_KEY
 
 # Obtain a database connection to the MySQL instance
 db_host = 'localhost'
-db_user = 'sec_user'
+db_user = 'user'
 db_pass = PASSWORD
-db_name = 'securities_master'
+db_name = 'financial_db'
 con = mdb.connect(db_host, db_user, db_pass, db_name)
 
 

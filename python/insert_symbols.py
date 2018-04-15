@@ -1,5 +1,4 @@
 import datetime
-from math import ceil
 import bs4
 import MySQLdb as mdb
 import requests
@@ -50,9 +49,9 @@ def insert_snp500_symbols(symbols):
 
     # Connect to the MySQL instance
     db_host = 'localhost'
-    db_user = 'sec_user'
+    db_user = 'user'
     db_pass = PASSWORD
-    db_name = 'securities_master'
+    db_name = 'financial_db'
     con = mdb.connect(
         host=db_host, user=db_user, passwd=db_pass, db=db_name
     )
