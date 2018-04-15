@@ -1,8 +1,6 @@
 # Stock Price Analysis
 
-## Prompt
-
-### De-Mystifying ML
+## Prompt: De-Mystifying ML
 1. Find a Problem worth Solving, Analyzing, or Visualizing
 2. Use ML in the context of technologies learned
 3. You must use:
@@ -50,9 +48,8 @@
     - Connects to the database and obtains a list of the S&P500 ticker symbols
     - Obtains OHLCV data from Quandl
     - Adds relevant data to the database (~20,000,000 data points)
-  - Run sql_to_dataframe.py to grab relevant data from MySQL and convert it to a pandas DataFrame
+  - Run sql_to_dataframe.py to grab relevant data from MySQL and return a pandas DataFrame
     - Data analysis MUCH easier with pandas
-    - Small plotting function included in script
 
 ## Unofficial Notes
 
