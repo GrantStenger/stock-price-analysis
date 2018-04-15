@@ -37,7 +37,7 @@
 
 ## Installation and Set-Up
     - Install dependencies
-      `pip install -r requirements.txt`
+      - `pip install -r requirements.txt`
     - Create a file called passwords.py
       - Set the variables
         - PASSWORD = "{your_password_here}"
@@ -179,5 +179,5 @@
 
 ## Acknowledgments
 - Bootstrap [Scrolling Nav](https://startbootstrap.com/template-overviews/scrolling-nav/) template used.
-- *Successful Algorithmic Trading* by Michael Halls-Moore frequently consulted and open-source scripts used for to initialize databases.
+- *Successful Algorithmic Trading* by Michael Halls-Moore frequently consulted and open-source scripts used to initialize databases.
 - *Quantitative Trading: How to Build Your Own Algorithmic Trading Business* by Ernest P. Chan referenced for "[Trading Strategy Evaluation](#trading-strategy-evaluation)"
