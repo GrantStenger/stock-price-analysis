@@ -19,7 +19,7 @@ def retrieve_data(ticker):
 	sql += "INNER JOIN daily_price AS dp \n"
 	sql += "ON dp.symbol_id = sym.id \n"
 	sql += "WHERE sym.ticker = '%s' \n" % ticker
-	sql += "ORDER BY dp.price_date ASC;" 
+	sql += "ORDER BY dp.price_date ASC;"
 
 	# Create a pandas dataframe from the SQL query
 	df = pd.read_sql_query(sql, con=con, index_col='price_date')

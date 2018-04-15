@@ -50,6 +50,9 @@
     - Connects to the database and obtains a list of the S&P500 ticker symbols
     - Obtains OHLCV data from Quandl
     - Adds relevant data to the database (~20,000,000 data points)
+  - Run sql_to_dataframe.py to grab relevant data from MySQL and convert it to a pandas DataFrame
+    - Data analysis MUCH easier with pandas
+    - Small plotting function included in script
 
 ## Unofficial Notes
 
@@ -64,7 +67,10 @@
   - Python
     - BeautifulSoup
     - requests
-    - Quandl API
+    - MySQLdb
+    - quandl
+    - Matplotlib
+    - pandas
   - MySQL
 - To Use:
   - Keras
