@@ -50,8 +50,11 @@
     - Adds relevant data to the database (~20,000,000 data points)
   - Run sql_to_dataframe.py to grab relevant data from MySQL and return a pandas DataFrame
     - Data analysis MUCH easier with pandas
-- Analysis will build off of pandas DataFrames
-- Website currently hosted at [gstenger98.github.io/stock-price-analysis](https://gstenger98.github.io/stock-price-analysis/), but Heroku and Flask will soon be used.
+- What's coming:
+  - Now that we can use pandas, we will begin our analysis.
+  - I'm interested in applying WaveNet to time series data.
+  - We will host [the website](https://gstenger98.github.io/stock-price-analysis/) using Heroku and Flask.
+  - We will add the content of the presentation to the site.
 
 ## Unofficial Notes
 
