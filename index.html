@@ -57,6 +57,9 @@
             <a class="nav-link js-scroll-trigger" href="#section3">Section Three</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#section4">Section Four</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#conclusion">Conclusion</a>
           </li>
         </ul>
@@ -65,8 +68,8 @@
 
     <header class="bg-primary text-white">
       <div class="container text-center">
-        <h1>Welcome to Our Final Project Page</h1>
-        <p class="lead">This is an analysis of stock price data using the techniques we've learned throughout the year</p>
+        <h1>Welcome to Our Stock Price Analysis!</h1>
+        <p class="lead">By Grant Stenger, Yeon Sung, and Monica Martin</p>
       </div>
     </header>
 
@@ -91,7 +94,47 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Section One:</h2>
+            <h2>Section One: Gathering the Data</h2>
+            <h4>Quandl to MySQL to Pandas</h4>
+            <p class="lead">In this first step, we created a pipeline from our online data provider to our local MySQL database. We used BeautifulSoup and requests to scrape Wikipedia for the ticker symbols of the S&P500 stocks. We then queried our database for these symbols and used them with Quandl's API to download the historical pricing data for each symbol from 1/1/2000 to today. Finally, we queried our MySQL database for relevant stock data and converted it to a pandas DataFrame to use for further analysis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Section Two</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. This template features:</p>
+            <ul>
+              <li>Clickable nav links that smooth scroll to page sections</li>
+              <li>Responsive behavior when clicking nav links perfect for a one page website</li>
+              <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
+              <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section3" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Section Three</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Section Four</h2>
             <h4>Plotting Time Series Data with Plotly and Quandl's API</h4>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
           </div>
@@ -105,28 +148,6 @@
               <button id="submit" type="submit" class="btn btn-default">Plot Stock</button>
             </form>
             <div id="plot"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="section2">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Section Two</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="section3" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Section Three</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
           </div>
         </div>
       </div>
