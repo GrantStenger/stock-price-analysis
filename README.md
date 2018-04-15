@@ -38,24 +38,24 @@
 ## Installation and Set-Up
 - Install dependencies
   - Run: `pip install -r requirements.txt`
-- Create a file called passwords.py
-  - Set the variables:
-    ```python
-    # insert_symbols.py
-    PASSWORD = "{your_password_here}"
-    API_KEY = "{your_api_key_here}"
-    ```
-  - Import passwords with `from passwords.py import PASSWORD, API_KEY` whenever these variables are needed.
 - Configuring MySQL
-  - In MySQL Workbench create a new database and user.
-  - Run financial_db.sql script to create the tables.
-  - Run insert_symbols.py to populate the symbol table.
-    - This parses Wikipedia's S&P500 page using requests and BeautifulSoup.
+  - In MySQL Workbench create a new database and user
+  - Run financial_db.sql script to create the tables
+  - Create a file called passwords.py
+    - Set the variables:
+      ```python
+      # insert_symbols.py
+      PASSWORD = "{your_password_here}"
+      API_KEY = "{your_api_key_here}"
+      ```
+    - Import passwords with `from passwords.py import PASSWORD, API_KEY` whenever these variables are needed.
+  - Run insert_symbols.py to populate the symbol table
+    - This parses Wikipedia's S&P500 page using requests and BeautifulSoup
     - Then the ticker symbols are inserted into the MySQL database
-  - Run price_retrieval.py to populate the daily_price table.
-    - Connects to the database and obtains a list of the S&P500 ticker symbols.
-    - Obtains OHLCV data from Quandl.
-    - Adds relevant data to the database (~20,000,000 data points).
+  - Run price_retrieval.py to populate the daily_price table
+    - Connects to the database and obtains a list of the S&P500 ticker symbols
+    - Obtains OHLCV data from Quandl
+    - Adds relevant data to the database (~20,000,000 data points)
 
 ## Unofficial Notes
 
