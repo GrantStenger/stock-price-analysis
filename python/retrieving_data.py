@@ -3,7 +3,9 @@ import MySQLdb as mdb
 import matplotlib.pyplot as plt
 from passwords import PASSWORD
 
+# Grabs relevant data from MySQL and converts to a pandas dataframe
 def retrieve_data(ticker):
+
 	# Connect to the MySQL instance
 	db_host = 'localhost'
 	db_user = 'user'
