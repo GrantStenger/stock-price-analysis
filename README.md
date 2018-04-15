@@ -40,79 +40,92 @@
 
 ### Languages and Tools
 - Used So Far:
-    - HTML
-    - CSS
-    - JavaScript
-        - jQuery
-        - Plotly.js
-    - Bootstrap
-- To Use:
-    - Tensorflow.js
-    - Flask
+  - HTML
+  - CSS
+  - JavaScript
+    - jQuery
+    - Plotly.js
+  - Bootstrap
+  - Python
+    - BeautifulSoup
+    - requests
     - Quandl API
-    - Yahoo Finance API
-    - MySQL
+  - MySQL
+- To Use:
+  - Keras
+  - Tensorflow.js
+  - Flask
+  - Yahoo Finance API
+  - MongoDB
+  - Heroku
+  - Tweepy
 
 ### Possible Data Options
 - Providers
-    - Quandl
-    - Yahoo Finance
-    - Alpha Vantage
-    - EOD Historical Data
-    - Intrinio
+  - Quandl
+    - WIKI Prices
+    - Zacks Fundamentals Collection A
+  - Yahoo Finance
+  - Alpha Vantage
+  - EOD Historical Data
+  - Intrinio
+  - Google Finance
+  - QuantQuote
 - Types of Data
-  - Time Series Price Data
-      - Equities
-      - Bonds
-      - Commodities
-      - Forex
-    - Fundamental and Macroeconomic Data
-        - Interest rates
-        - Inflation figures
-        - Corporate actions (dividends, stock-splits)
-        - SEC filings
-        - Earnings figures
-        - Crop reports
-        - Meteorological data
-    - News Data (sentiment analysis, NoSQL)
-        - Tweets
-        - Blogs
-        - Articles
+  - MongoDB for Fundamental and Macroeconomic Data
+    - Interest rates
+    - Inflation figures
+    - Corporate actions (dividends, stock-splits)
+    - SEC filings
+    - Earnings figures
+    - Crop reports
+    - Meteorological data
+    - News Data (Tweets, Articles, Blogs)
+  - MySQL for Time Series Price Data (e.g. OHLCV)
+    - Equities
+      - Exchanges
+      - Vendor
+      - Ticker
+      - Price
+      - National Holidays
+    - Bonds
+    - Commodities
+    - Forex
 
 ### Hypotheses to Test
 - Test conventional wisdom
-    - Is the saying "sell in May and go away" meaningful advice?
-    - Test "buy the close, sell the open"
-    - Test Momentum vs Mean Reversion strategies
+  - Is the saying "sell in May and go away" meaningful advice?
+  - Test "buy the close, sell the open"
+  - Test Momentum vs Mean Reversion strategies
 - Try some ML
-    - Univariate Analysis on Time Series Data
-        - LSTMs on time series data (RNN)
-        - WaveNet
-    - Multivariate Analysis
-        - Techniques
-            - Neural Network
-            - Random Forests
-            - SVM
-            - Logistic Regression
-            - Naive Bayes
-        - Possible Features
-            - NLP Twitter Sentiment
-            - Market Cap
-            - P/E Ratio
-            - Beta
-            - Earnings per Share
-            - Enterprise Value Multiple
-            - P/E to growth ratio
-            - Price/book ratio
-            - Enterprise Value/Revenue
-            - Price/cash flow ratio
-            - Price/Sales Ratio
-            - Dividend Yield
-            - Profit Margin
-            - Operating Margin
-            - Return on Assets
-            - Return on Equity
-            - Volatility
+  - Univariate Analysis on Time Series Data
+    - LSTMs on time series data (RNN)
+    - WaveNet
+  - Multivariate Analysis
+    - Techniques
+      - Neural Network
+      - Random Forests
+      - SVM
+      - Logistic Regression
+      - Naive Bayes
+    - Possible Features
+      - NLP Twitter Sentiment
+      - Market Cap
+      - P/E Ratio
+      - Beta
+      - Earnings per Share
+      - Enterprise Value Multiple
+      - P/E to growth ratio
+      - Price/book ratio
+      - Enterprise Value/Revenue
+      - Price/cash flow ratio
+      - Price/Sales Ratio
+      - Dividend Yield
+      - Profit Margin
+      - Operating Margin
+      - Return on Assets
+      - Return on Equity
+      - Volatility
 
 ### Trading Strategy Evaluation
 - What is the Sharpe Ratio? (Essentially reward/risk ratio.)
@@ -128,10 +141,11 @@
     - "Buy low price stocks" strategies are highly susceptible to survivorship
 - Does the model use high-low data? High and low data is potentially susceptible to look-ahead bias and is sometimes unreliable.
 - How frequently does the model trade? Higher generally means more statistically significant, harder to implement, higher quality data needed, and transaction costs become more important.
+- How accurate was data? ("Garbage in, garbage out.")
 - Did we follow proper hypothesis testing procedure?
 - Running the model on actual unseen data is the most reliable way to test it.
 
-### Resources Referenced
+### Resources Referenced So Far
 - "Financial Time Series Prediction using Deep Learning", https://arxiv.org/pdf/1711.04174.pdf
 - "Deep Learning for Forecasting Stock Returns in the Cross-Section", https://arxiv.org/pdf/1801.03018.pdf
 - "Predict Forex Trend via Convolutional Neural Networks", https://arxiv.org/pdf/1801.01777.pdf
@@ -144,3 +158,26 @@
 - "Turn of the Month in Equity Indexes", https://quantpedia.com/screener/Details/41
 - "Equity Returns at the Turn of the Month", https://papers.ssrn.com/sol3/papers.cfm?abstract_id=917884
 - "Equity forecast: Predicting long term stock price movement using machine learning", https://arxiv.org/pdf/1603.00751.pdf
+
+## Installation and Set-Up
+- Install various dependencies
+- Create a file called passwords.py
+  - Set the variables
+    - PASSWORD = "{your_password_here}"
+    - API_KEY = "{your_api_key_here}"
+  - from passwords.py import PASSWORD, API_KEY (whenever these variables are needed)
+- Configuring MySQL
+  - In MySQL Workbench create a new database and user.
+  - Run financial_db.sql script to create the tables.
+  - Run insert_symbols.py to populate the symbol table.
+    - This parses Wikipedia's S&P500 page using requests and BeautifulSoup.
+    - Then the ticker symbols are inserted into the MySQL database
+  - Run price_retrieval.py to populate the daily_price table.
+    - Connects to the database and obtains a list of the S&P500 ticker symbols.
+    - Obtains OHLCV data from Quandl.
+    - Adds relevant data to the database (~20,000,000 data points).
+
+## Acknowledgments
+- Bootstrap [Scrolling Nav](https://startbootstrap.com/template-overviews/scrolling-nav/) template used.
+- *Successful Algorithmic Trading* by Michael Halls-Moore frequently consulted and open-source scripts used for to initialize databases.
+- *Quantitative Trading: How to Build Your Own Algorithmic Trading Business* by Ernest P. Chan referenced for "[Trading Strategy Evaluation](#resources-referenced-so-far)"
