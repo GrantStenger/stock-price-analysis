@@ -52,7 +52,7 @@
     - Data analysis MUCH easier with pandas
 - What's coming:
   - Now that we can use pandas, we will begin our analysis.
-  - I'm interested in applying WaveNet to time series data.
+  - Among many possible explorations, one idea is to apply WaveNet to time series data.
   - We will host [the website](https://gstenger98.github.io/stock-price-analysis/) using Heroku and Flask.
   - We will add the content of the presentation to the site.
 
@@ -105,21 +105,20 @@
     - Meteorological data
     - News Data (Tweets, Articles, Blogs)
   - MySQL for Time Series Price Data (e.g. OHLCV)
-    - Equities
-      - Exchanges
-      - Vendor
-      - Ticker
-      - Price
-      - National Holidays
-    - Bonds
-    - Commodities
-    - Forex
+  - Equities
+    - Price
+    - Symbol
+    - Exchanges
+    - Vendor
+  - Bonds
+  - Commodities
+  - Forex
 
 ### Hypotheses to Test
 - Test conventional wisdom
   - Is the saying "sell in May and go away" meaningful advice?
   - Test "buy the close, sell the open"
-  - Test Momentum vs Mean Reversion strategies
+  - Test Momentum and Mean-Reversion strategies
 - Try some ML
   - Univariate Analysis on Time Series Data
     - LSTMs on time series data (RNN)
