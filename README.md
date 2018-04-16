@@ -88,6 +88,7 @@
   - Quandl
     - WIKI Prices
     - Zacks Fundamentals Collection A
+  - [HistData](http://www.histdata.com/) (Tick level Forex data as .csv)
   - Yahoo Finance
   - Alpha Vantage
   - EOD Historical Data
@@ -113,6 +114,8 @@
   - Bonds
   - Commodities
   - Forex
+- Data Used So Far
+  - Quandl WIKI OHLCV data for S&P 500
 
 ### Hypotheses to Test
 - Test conventional wisdom
