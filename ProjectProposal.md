@@ -2,6 +2,7 @@
 
 ### Proposal
 - Analyzing S&P 500 stock market data to predict gain/loss
+- Using data to train ML model to determine whether a stock purchase at a given time is a wise decision or not
 - Selection of Features to use for ML model: Perform correlation analysis to determine features used for ML model.
 
 ### Languages and Tools
