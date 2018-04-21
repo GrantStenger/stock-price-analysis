@@ -27,6 +27,11 @@
     * Create an idea with “mock data” that simulates how machine learning might be used
     * Create an analysis of existing data to make a prediction, classification, or regression
 
+## Proposal
+- Analyzing S&P 500 stock market data to predict gain/loss
+- Using data to train ML model to determine whether a stock purchase at a given time is a wise decision or not
+- Selection of Features to use for ML model: Perform correlation analysis to determine features used for ML model.
+
 ## Installation and Set-Up
 - Install dependencies
   - Run: `pip install -r requirements.txt`
@@ -56,9 +61,7 @@
   - We will host [the website](https://gstenger98.github.io/stock-price-analysis/) using Heroku and Flask.
   - We will add the content of the presentation to the site.
 
-## Unofficial Notes
-
-### Languages and Tools
+## Languages and Tools
 - Used So Far:
   - HTML
   - CSS
@@ -82,6 +85,8 @@
   - MongoDB
   - Heroku
   - Tweepy
+
+## Unofficial Notes
 
 ### Possible Data Options
 - Providers
