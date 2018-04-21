@@ -1,4 +1,4 @@
-# Stock Price Analysis
+# [Stock Price Analysis](https://stock-price-analysis.herokuapp.com/)
 
 ## Prompt: De-Mystifying ML
 1. Find a Problem worth Solving, Analyzing, or Visualizing
@@ -27,11 +27,6 @@
     * Create an idea with “mock data” that simulates how machine learning might be used
     * Create an analysis of existing data to make a prediction, classification, or regression
 
-## Proposal
-- Analyzing S&P 500 stock market data to predict gain/loss
-- Using data to train ML model to determine whether a stock purchase at a given time is a wise decision or not
-- Selection of Features to use for ML model: Perform correlation analysis to determine features used for ML model.
-
 ## Installation and Set-Up
 - Install dependencies
   - Run: `pip install -r requirements.txt`
@@ -58,7 +53,7 @@
 - What's coming:
   - Now that we can use pandas, we will begin our analysis.
   - Among many possible explorations, one idea is to apply WaveNet to time series data.
-  - We will host [the website](https://gstenger98.github.io/stock-price-analysis/) using Heroku and Flask.
+  - We will host [the website](https://stock-price-analysis.herokuapp.com/) using Heroku and Flask.
   - We will add the content of the presentation to the site.
 
 ## Languages and Tools
@@ -77,13 +72,12 @@
     - Matplotlib
     - pandas
   - MySQL
+  - Flask
+  - Heroku
 - To Use:
   - Keras
-  - Tensorflow.js
-  - Flask
-  - Yahoo Finance API
+  - Tensorflow
   - MongoDB
-  - Heroku
   - Tweepy
 
 ## Unofficial Notes
