@@ -1,2 +1,6 @@
-Flask
-gunicorn
+requests==2.18.4
+matplotlib==2.1.1
+Quandl==3.3.0
+pandas==0.20.1
+Flask==0.12.2
+beautifulsoup4==4.6.0
