@@ -1,0 +1,118 @@
+# Stock Price Analysis
+
+### Proposal
+- Analyzing S&P 500 stock market data to predict gain/loss
+- Using data to train ML model to determine whether a stock purchase at a given time is a wise decision or not
+- Selection of Features to use for ML model: Perform correlation analysis to determine features used for ML model.
+
+### Languages and Tools
+- Used So Far:
+  - HTML
+  - CSS
+  - JavaScript
+    - jQuery
+    - Plotly.js
+  - Bootstrap
+  - Python
+    - BeautifulSoup
+    - requests
+    - MySQLdb
+    - quandl
+    - Matplotlib
+    - pandas
+  - MySQL
+- To Use:
+  - Keras
+  - Tensorflow.js
+  - Flask
+  - Yahoo Finance API
+  - MongoDB
+  - Heroku
+  - Tweepy
+
+### Possible Data Options
+- Providers
+  - Quandl
+    - WIKI Prices
+    - Zacks Fundamentals Collection A
+  - [HistData](http://www.histdata.com/) (Tick level Forex data as .csv)
+  - Yahoo Finance
+  - Alpha Vantage
+  - EOD Historical Data
+  - Intrinio
+  - Google Finance
+  - QuantQuote
+- Types of Data
+  - MongoDB for Fundamental and Macroeconomic Data
+    - Interest rates
+    - Inflation figures
+    - Corporate actions (dividends, stock-splits)
+    - SEC filings
+    - Earnings figures
+    - Crop reports
+    - Meteorological data
+    - News Data (Tweets, Articles, Blogs)
+  - MySQL for Time Series Price Data (e.g. OHLCV)
+  - Equities
+    - Price
+    - Symbol
+    - Exchanges
+    - Vendor
+  - Bonds
+  - Commodities
+  - Forex
+- Data Used So Far
+  - Quandl WIKI OHLCV data for S&P 500
+
+### Hypotheses to Test
+- Test conventional wisdom
+  - Is the saying "sell in May and go away" meaningful advice?
+  - Test "buy the close, sell the open"
+  - Test Momentum and Mean-Reversion strategies
+- Try some ML
+  - Univariate Analysis on Time Series Data
+    - LSTMs on time series data (RNN)
+    - WaveNet
+  - Multivariate Analysis
+    - Techniques
+      - Neural Network
+      - Random Forests
+      - SVM
+      - Logistic Regression
+      - Naive Bayes
+    - Possible Features
+      - NLP Twitter Sentiment
+      - Market Cap
+      - P/E Ratio
+      - Beta
+      - Earnings per Share
+      - Enterprise Value Multiple
+      - P/E to growth ratio
+      - Price/book ratio
+      - Enterprise Value/Revenue
+      - Price/cash flow ratio
+      - Price/Sales Ratio
+      - Dividend Yield
+      - Profit Margin
+      - Operating Margin
+      - Return on Assets
+      - Return on Equity
+      - Volatility
+
+### Trading Strategy Evaluation
+- What is the Sharpe Ratio? (Essentially reward/risk ratio.)
+- How deep and long are the drawdowns?
+- What was the win/loss ratio and what was the average profit and loss?
+- How does this strategy compare to our benchmark? For large-cap US equities the S&P500 would be a natural comparison.
+- How consistent are the returns?
+- How did the performance of the strategy change over the years? Do returns start to diminish over time?
+- Does the model overfit? Look at number of parameters. Do sensitivity analysis and dimensionality reduction.
+- How will transaction costs (commission, slippage, market impact) affect the strategy? No backtest is realistic without incorporating transaction costs.
+- Does the data suffer from survivorship bias?
+    - Yahoo Finance data does have survivorship bias.
+    - "Buy low price stocks" strategies are highly susceptible to survivorship
+- Does the model use high-low data? High and low data is potentially susceptible to look-ahead bias and is sometimes unreliable.
+- How frequently does the model trade? Higher generally means more statistically significant, harder to implement, higher quality data needed, and transaction costs become more important.
+- How accurate was data? ("Garbage in, garbage out.")
+- Did we follow proper hypothesis testing procedure?
+- Running the model on actual unseen data is the most reliable way to test it.

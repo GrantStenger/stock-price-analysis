@@ -88,6 +88,7 @@
   - Quandl
     - WIKI Prices
     - Zacks Fundamentals Collection A
+  - [HistData](http://www.histdata.com/) (Tick level Forex data as .csv)
   - Yahoo Finance
   - Alpha Vantage
   - EOD Historical Data
@@ -113,15 +114,22 @@
   - Bonds
   - Commodities
   - Forex
+- Data Used So Far
+  - Quandl WIKI OHLCV data for S&P 500
 
 ### Hypotheses to Test
 - Test conventional wisdom
   - Is the saying "sell in May and go away" meaningful advice?
   - Test "buy the close, sell the open"
   - Test Momentum and Mean-Reversion strategies
+  - [2 Trades, 30 Minutes](https://www.zerohedge.com/news/2016-02-29/how-beat-market-trading-just-30-minutes-day)
 - Try some ML
   - Univariate Analysis on Time Series Data
     - LSTMs on time series data (RNN)
+      - [A Guide For Time Series Prediction Using Recurrent Neural Networks (LSTMs)](https://blog.statsbot.co/time-series-prediction-using-recurrent-neural-networks-lstms-807fa6ca7f)
+      - [Multivariate Time Series Forecasting with LSTMs in Keras](https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/)
+      - [Time Series Prediction with LSTM Recurrent Neural Networks in Python with Keras](https://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/)
+      - [Time Series Forecasting with the Long Short-Term Memory Network in Python](https://machinelearningmastery.com/time-series-forecasting-long-short-term-memory-network-python/)
     - WaveNet
   - Multivariate Analysis
     - Techniques
@@ -160,9 +168,9 @@
 - How will transaction costs (commission, slippage, market impact) affect the strategy? No backtest is realistic without incorporating transaction costs.
 - Does the data suffer from survivorship bias?
     - Yahoo Finance data does have survivorship bias.
-    - "Buy low price stocks" strategies are highly susceptible to survivorship
+    - "Buy low price stocks" strategies are highly susceptible to survivorship.
 - Does the model use high-low data? High and low data is potentially susceptible to look-ahead bias and is sometimes unreliable.
-- How frequently does the model trade? Higher generally means more statistically significant, harder to implement, higher quality data needed, and transaction costs become more important.
+- How frequently does the model trade? More frequent trading generally means more statistical significance, harder implementation, higher quality data needed, and transaction costs become more important.
 - How accurate was data? ("Garbage in, garbage out.")
 - Did we follow proper hypothesis testing procedure?
 - Running the model on actual unseen data is the most reliable way to test it.
