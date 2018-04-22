@@ -169,7 +169,7 @@
 - Did we follow proper hypothesis testing procedure?
 - Running the model on actual unseen data is the most reliable way to test it.
 
-### Resources Referenced So Far
+### Potentially Helpful Resources
 - "Financial Time Series Prediction using Deep Learning", https://arxiv.org/pdf/1711.04174.pdf
 - "Deep Learning for Forecasting Stock Returns in the Cross-Section", https://arxiv.org/pdf/1801.03018.pdf
 - "Predict Forex Trend via Convolutional Neural Networks", https://arxiv.org/pdf/1801.01777.pdf
@@ -182,6 +182,11 @@
 - "Turn of the Month in Equity Indexes", https://quantpedia.com/screener/Details/41
 - "Equity Returns at the Turn of the Month", https://papers.ssrn.com/sol3/papers.cfm?abstract_id=917884
 - "Equity forecast: Predicting long term stock price movement using machine learning", https://arxiv.org/pdf/1603.00751.pdf
+- Backtesting
+  - https://github.com/mhallsmoore/qstrader
+  - https://github.com/ematvey/pybacktest
+  - https://www.quantstart.com/articles/backtesting-systematic-trading-strategies-in-python-considerations-and-open-source-frameworks
+- [Front end checklist](https://frontendchecklist.io/)
 
 ## Acknowledgments
 - Bootstrap [Scrolling Nav](https://startbootstrap.com/template-overviews/scrolling-nav/) template used.
