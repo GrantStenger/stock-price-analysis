@@ -88,11 +88,10 @@
     - WIKI Prices
     - Zacks Fundamentals Collection A
     - [HistData](http://www.histdata.com/) (Tick level Forex data as .csv)
-  - Yahoo Finance
+  - Yahoo Finance (deprecated, buggy)
   - Alpha Vantage
   - EOD Historical Data
   - Intrinio
-  - Google Finance
   - QuantQuote
 - Types of Data
   - MongoDB for Fundamental and Macroeconomic Data
@@ -105,14 +104,14 @@
     - Meteorological data
     - News Data (Tweets, Articles, Blogs)
   - MySQL for Time Series Price Data (e.g. OHLCV)
-  - Equities
-    - Price
-    - Symbol
-    - Exchanges
-    - Vendor
-  - Bonds
-  - Commodities
-  - Forex
+    - Equities
+      - Price
+      - Symbol
+      - Exchanges
+      - Vendor
+    - Bonds
+    - Commodities
+    - Forex
   - Data Used So Far
     - Quandl WIKI OHLCV data for S&P 500
 
@@ -120,7 +119,10 @@
 - Test conventional wisdom
   - Is the saying "sell in May and go away" meaningful advice?
   - Test "buy the close, sell the open"
-  - Test Momentum and Mean-Reversion strategies
+  - Test mean-reversion strategies
+    - [Test Bear Call Spread](http://www.wyattresearch.com/article/mean-reversion-strategy/)
+    - [Mean Reversion: Simple Trading Strategies Part 1](https://medium.com/auquan/mean-reversion-simple-trading-strategies-part-1-a18a87c1196a)
+  - Test momentum strategies
 - Try some ML
   - Univariate Analysis on Time Series Data
     - LSTMs on time series data (RNN)
