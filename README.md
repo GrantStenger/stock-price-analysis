@@ -63,7 +63,7 @@
 - Grant
   - Recurrent Neural Networks (predict time series data)
   - Seasonality if time permits -->
-  
+
 ## Languages and Tools
 - Used So Far:
   - HTML
@@ -131,6 +131,7 @@
     - [Test Bear Call Spread](http://www.wyattresearch.com/article/mean-reversion-strategy/)
     - [Mean Reversion: Simple Trading Strategies Part 1](https://medium.com/auquan/mean-reversion-simple-trading-strategies-part-1-a18a87c1196a)
   - Test momentum strategies
+  - Test simple increase-decrease markov model
 - Try some ML
   - Univariate Analysis on Time Series Data
     - LSTMs on time series data (RNN)
