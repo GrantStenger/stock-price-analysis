@@ -33,23 +33,24 @@
 - Configuring MySQL
   - In MySQL Workbench create a new database and user
   - Run financial_db.sql script to create the tables
-  - Create a file called passwords.py
-    - This is the code:
+  - Create a file called passwords.py (because I didn't want to publish my passwords online)
+    - This is the entire script:
       ```python
       # insert_symbols.py
-      PASSWORD = "{your_password_here}"
-      API_KEY = "{your_api_key_here}"
+      PASSWORD = "{your_MySQL_password_here}"
+      API_KEY = "{your__Quandl_api_key_here}"
       ```
-    - Import these variables with `from passwords.py import PASSWORD, API_KEY` whenever necessary.
-  - Run insert_symbols.py to populate the symbol table
+    - Import these variables with `from passwords.py import PASSWORD, API_KEY` whenever necessary. I've already done that for you for all included scripts.
+  - Run insert_symbols.py to populate the MySQL symbol table
     - This parses Wikipedia's S&P500 page using requests and BeautifulSoup
-    - Then the ticker symbols are inserted into the MySQL database
+    - Then the ticker symbols and other relevant information are inserted into the MySQL database
   - Run price_retrieval.py to populate the daily_price table
     - Connects to the database and obtains a list of the S&P500 ticker symbols
     - Obtains OHLCV data from Quandl
-    - Adds relevant data to the database (~20,000,000 data points)
+    - Adds relevant data to the database (~20,000,000 data points takes about 15 minutes)
   - Run sql_to_dataframe.py to grab relevant data from MySQL and return a pandas DataFrame
     - Data analysis MUCH easier with pandas
+    - From here you can start to do your own data analysis. 
 - What's coming:
   - Now that we can use pandas, we will begin our analysis.
   - Among many possible explorations, one idea is to apply WaveNet to time series data.
@@ -135,6 +136,10 @@
     - LSTMs on time series data (RNN)
       - [Applying Deep Learning to Time Series Forecasting with TensorFlow](https://mapr.com/blog/deep-learning-tensorflow/)
       - [Predict Stock Prices Using RNN: Part 1](https://lilianweng.github.io/lil-log/2017/07/08/predict-stock-prices-using-RNN-part-1.html)
+      - Use S&P 500 from 1950 to today
+      - Try to predict opening prices
+      - Take latest 10% of data as test data
+      - Normalize the data so instead of predicting absolute price, predict relative change in price.
     - WaveNet
   - Multivariate Analysis
     - Techniques
