@@ -56,6 +56,13 @@
   - We will host [the website](https://stock-price-analysis.herokuapp.com/) using Heroku and Flask.
   - We will add the content of the presentation to the site.
 
+## Task Breakdown
+- Monica: performance data
+- Yeon: News Headline (Natural Language Processing)
+- Grant
+  - Recurrent Neural Networks (predict time series data)
+  - Seasonality if time permits
+
 ## Languages and Tools
 - Used So Far:
   - HTML
@@ -126,6 +133,8 @@
 - Try some ML
   - Univariate Analysis on Time Series Data
     - LSTMs on time series data (RNN)
+      - [Applying Deep Learning to Time Series Forecasting with TensorFlow](https://mapr.com/blog/deep-learning-tensorflow/)
+      - [Predict Stock Prices Using RNN: Part 1](https://lilianweng.github.io/lil-log/2017/07/08/predict-stock-prices-using-RNN-part-1.html)
     - WaveNet
   - Multivariate Analysis
     - Techniques

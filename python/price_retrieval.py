@@ -21,7 +21,7 @@ con = mdb.connect(db_host, db_user, db_pass, db_name)
 Obtains a list of the S&P500 ticker symbols from the database.
 """
 def obtain_list_of_db_tickers():
-	with con: 
+	with con:
 		cur = con.cursor()
 		cur.execute("SELECT id, ticker FROM symbol")
 		data = cur.fetchall()
@@ -37,7 +37,7 @@ def get_daily_historic_data_quandl(
 	):
 
 	ticker_tup = (
-		ticker, start_date[0], start_date[1], start_date[2], 
+		ticker, start_date[0], start_date[1], start_date[2],
 		end_date[0], end_date[1], end_date[2], API_KEY
 	)
 	url = "https://www.quandl.com/api/v3/datasets/WIKI/"
@@ -58,15 +58,15 @@ def get_daily_historic_data_quandl(
 			Open = data[i][1]
 			high = data[i][2]
 			low = data[i][3]
-			close = data[i][4] 
+			close = data[i][4]
 			volume = data[i][5]
 			adj_open = data[i][8]
 			adj_high = data[i][9]
 			adj_low = data[i][10]
 			adj_close = data[i][11]
-			prices.append( 
+			prices.append(
 				(date.date(), Open, high, low, close, volume,
-					adj_open, adj_high, adj_low, adj_close) 
+					adj_open, adj_high, adj_low, adj_close)
 			)
 
 	except Exception as e:
@@ -78,7 +78,7 @@ def get_daily_historic_data_quandl(
 Takes a list of tuples of daily data and adds it to the
 MySQL database. Appends the vendor ID and symbol ID to the data.
 
-daily_data: List of tuples of the OHLC data (with 
+daily_data: List of tuples of the OHLC data (with
 adj_ohlc and volume)
 """
 def insert_daily_data_into_db(data_vendor_id, symbol_id, daily_data):
@@ -89,7 +89,7 @@ def insert_daily_data_into_db(data_vendor_id, symbol_id, daily_data):
 	# Amend the data to include the vendor ID and symbol ID
 	daily_data = [
 		(data_vendor_id, symbol_id, d[0], now, now,
-		d[1], d[2], d[3], d[4], d[5], d[6], d[7], d[8], d[9]) 
+		d[1], d[2], d[3], d[4], d[5], d[6], d[7], d[8], d[9])
 		for d in daily_data
 	]
 
@@ -114,7 +114,7 @@ if __name__ == "__main__":
 	lentickers = len(tickers)
 	for i, t in enumerate(tickers):
 		print(
-			"Adding data for %s: %s out of %s" % 
+			"Adding data for %s: %s out of %s" %
 			(t[1], i+1, lentickers)
 		)
 		quandl_data = get_daily_historic_data_quandl(t[1])
