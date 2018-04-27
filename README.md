@@ -50,20 +50,20 @@
     - Adds relevant data to the database (~20,000,000 data points takes about 15 minutes)
   - Run sql_to_dataframe.py to grab relevant data from MySQL and return a pandas DataFrame
     - Data analysis MUCH easier with pandas
-    - From here you can start to do your own data analysis. 
+    - From here you can start to do your own data analysis.
 - What's coming:
   - Now that we can use pandas, we will begin our analysis.
   - Among many possible explorations, one idea is to apply WaveNet to time series data.
   - We will host [the website](https://stock-price-analysis.herokuapp.com/) using Heroku and Flask.
   - We will add the content of the presentation to the site.
 
-## Task Breakdown
+<!-- ## Task Breakdown
 - Monica: performance data
 - Yeon: News Headline (Natural Language Processing)
 - Grant
   - Recurrent Neural Networks (predict time series data)
-  - Seasonality if time permits
-
+  - Seasonality if time permits -->
+  
 ## Languages and Tools
 - Used So Far:
   - HTML
