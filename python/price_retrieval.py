@@ -94,7 +94,7 @@ def insert_daily_data_into_db(data_vendor_id, symbol_id, daily_data):
 	]
 
 	# Create the insert strings
-	column_str = "data_vendor_id, symbol_id, price_date, created_date, last_updated_date, open_price, high_price, low_price, close_price, adj_open_price, adj_high_price, adj_low_price, adj_close_price, volume"
+	column_str = "data_vendor_id, symbol_id, price_date, created_date, last_updated_date, open_price, high_price, low_price, close_price, volume, adj_open_price, adj_high_price, adj_low_price, adj_close_price"
 	insert_str = ("%s, " * 14)[:-2]
 	final_str = "INSERT INTO daily_price (%s) VALUES (%s)" % (column_str, insert_str)
 

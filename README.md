@@ -141,6 +141,7 @@
       - Try to predict opening prices
       - Take latest 10% of data as test data
       - Normalize the data so instead of predicting absolute price, predict relative change in price.
+      - [A deep learning framework for financial time series using stacked autoencoders and long-short term memory](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944)
     - WaveNet
   - Multivariate Analysis
     - Techniques

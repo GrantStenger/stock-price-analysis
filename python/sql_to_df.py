@@ -14,7 +14,7 @@ def retrieve_data(ticker):
 	con = mdb.connect(db_host, db_user, db_pass, db_name)
 
 	# Select all of the historic Google adjusted close data
-	sql = "SELECT dp.price_date, dp.adj_close_price, dp.open_price, dp.close_price \n"
+	sql = "SELECT dp.price_date, dp.adj_open_price, dp.adj_close_price, dp.adj_high_price, dp.adj_low_price \n"
 	sql += "FROM symbol AS sym \n"
 	sql += "INNER JOIN daily_price AS dp \n"
 	sql += "ON dp.symbol_id = sym.id \n"
