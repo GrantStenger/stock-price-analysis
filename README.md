@@ -142,7 +142,18 @@
       - Take latest 10% of data as test data
       - Normalize the data so instead of predicting absolute price, predict relative change in price.
       - [A deep learning framework for financial time series using stacked autoencoders and long-short term memory](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180944)
+      - https://github.com/llSourcell/How-to-Predict-Stock-Prices-Easily-Demo
+      - https://github.com/AndysDeepAbstractions/How-to-Predict-Stock-Prices-Easily-Demo
+      - https://github.com/etai83/lstm_stock_prediction/tree/68d3240b512a90802882bc5d46b27cabeeecc9dd
+      - https://github.com/llSourcell/AI_in_Finance
+      - [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+      - [Financial Market Time Series Prediction with Recurrent Neural
+Networks](http://cs229.stanford.edu/proj2012/BernalFokPidaparthi-FinancialMarketTimeSeriesPredictionwithRecurrentNeural.pdf)
+      - [Predict stock market prices using RNN model with multilayer LSTM cells + optional multi-stock embeddings.](https://github.com/lilianweng/stock-rnn)
+      - [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
     - WaveNet
+    - Echo State Networks
+      - https://en.wikipedia.org/wiki/Echo_state_network
   - Multivariate Analysis
     - Techniques
       - Neural Network
