@@ -65,28 +65,25 @@
   - Seasonality if time permits -->
 
 ## Languages and Tools
-- Used So Far:
-  - HTML
-  - CSS
-  - JavaScript
-    - jQuery
-    - Plotly.js
-  - Bootstrap
-  - Python
-    - BeautifulSoup
-    - requests
-    - MySQLdb
-    - quandl
-    - Matplotlib
-    - pandas
-  - MySQL
-  - Flask
-  - Heroku
-- To Use:
+- HTML
+- CSS
+- JavaScript
+  - jQuery
+  - Plotly.js
+- Bootstrap
+- Python
+  - BeautifulSoup
+  - requests
+  - MySQLdb
+  - quandl
+  - Matplotlib
+  - pandas
   - Keras
   - Tensorflow
-  - MongoDB
   - Tweepy
+- MySQL
+- Flask
+- Heroku
 
 ## Unofficial Notes
 
