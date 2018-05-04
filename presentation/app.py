@@ -14,5 +14,9 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/nlp.html')
+def nlp():
+    return render_template('nlp-yeon.html')
+
 if __name__ == '__main__':
   app.run(debug=True)
