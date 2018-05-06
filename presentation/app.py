@@ -18,5 +18,13 @@ def about():
 def nlp():
     return render_template('nlp-yeon.html')
 
+@app.route('/lstm.html')
+def lstm():
+    return render_template('stock-lstm.html')
+
+@app.route('/monica.html')
+def monica():
+    return render_template('monica.html')
+
 if __name__ == '__main__':
   app.run(debug=True)
